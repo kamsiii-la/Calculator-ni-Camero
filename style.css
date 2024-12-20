@@ -1,0 +1,85 @@
+*{
+	padding: 0;
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: Arial;
+}
+
+.content{
+	background-color: lightblue;
+	padding-top: 15px;
+	padding: 20px 20px;
+	transition: .5s;
+	cursor: pointer;
+	width: 400px;
+	max-width: 90%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	animation: fadeSlideIn 1s ease-in-out;
+	transition: .3s;
+}
+
+.content:hover{
+	transform: scale(1.1);
+}
+
+@keyframes fadeSlideIn {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.btn{
+	clear: both;
+	width: 100px;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	cursor: pointer;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	transition: .5s;
+	border-radius: 25px;
+}
+
+.btn:hover{
+	background-color: darkblue;
+	color: white;
+}
+
+.user-input{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:10px;
+}
+
+.user-input input{
+	margin-top: 15px;
+	width: 80%;
+	max-width: 300px;
+	text-align: center;
+	padding: 10px;
+	transition: .5s;
+	text-transform: uppercase;
+}
+
+.user-input input:focus{
+	outline: 1px solid blue;
+}
+
