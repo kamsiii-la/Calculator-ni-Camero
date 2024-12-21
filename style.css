@@ -83,3 +83,13 @@ body{
 	outline: 1px solid blue;
 }
 
+@media (max-width: 480px) {
+	.content {
+		padding: 5px;
+	}
+
+	.user-input input {
+		width: 90%;
+	}
+}
+
